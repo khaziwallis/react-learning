@@ -1,12 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+var phone = {
+  pincode: 'khazi',
+  number: 'afzal'
+}
+var Person = {
+  name: {
+    firstName: 'khazi',
+    lastName: 'Afzal'
+  },
+  phone: {
+    pincode: '91',
+    number: '9844317471'
+  }
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App person={Person}/>, document.getElementById("root"));

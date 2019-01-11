@@ -1,0 +1,6 @@
+-   request:
+      url: ^/api/users$
+      method: GET
+    response:
+      status: 200
+      file: api-mocks/responses/users.json
