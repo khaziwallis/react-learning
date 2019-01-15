@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from 'react-router-dom';
+import { BrowserRouter, Router, Route } from 'react-router-dom';
 import Routing from './Routing';
-
-import createBrowserHistory from "history/createBrowserHistory";
-const customHistory = createBrowserHistory();
 
 
 ReactDOM.render(
-  <Router history={customHistory}>
+  <BrowserRouter>
   	<Route component={Routing} />
-  </Router>,
+  </BrowserRouter>,
   document.getElementById("content")
 );
